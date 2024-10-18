@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.heading {
+    height: 60px;  
+    text-align: center;
+    color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    background-color: rgb(53, 138, 198);
+}
+
+.container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%; /* Make container responsive */
+    max-width: 600px; /* Set a maximum width */
+    margin: 50px auto;
+    display: block; 
+    position: relative;
+}
+
+.input-group {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+label {
+    font-size: 25px;
+    font-weight: 500;
+    color: grey;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 2px solid #2196f3;
+    padding: 5px 10px;
+    width: 70%; /* Make input take full width */
+    font-size: 16px;
+    outline: none;
+}
+
+#add {
+    background-color: #2196f3;
+    color: white;
+    width: auto; /* Change from fixed width to auto */
+    height: 30px;
+    font-size: larger;
+    margin-left: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px; /* Add padding for better aesthetics */
+    display: inline-block; /* Make it inline block for proper alignment */
+}
+
+#task-list {
+    margin-top: 10px;
+}
+
+/* Styling for the list container */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; /* Pushes buttons to the right */
+    align-items: center;
+    padding: 5px;
+    padding-left: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.prg-btn, .del-btn, .cmp-btn {
+    border: none;
+    padding: 10px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+button.prg-btn {
+    background-color: #2196f3;
+    color: white;
+}
+
+button.del-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+button.cmp-btn {
+    background-color: #000000;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button.clear {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    margin-left: 0;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+
+    label {
+        font-size: 20px; /* Adjust label size */
+    }
+
+    input[type="text"] {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .container {
+        width: 95%; /* Slightly wider on small screens */
+        margin: 20px auto; /* Adjust margin */
+    }
+
+    li {
+        font-size: 16px; /* Adjust list item font size */
+    }
+
+    .prg-btn, .del-btn, .cmp-btn {
+        font-size: 12px; /* Smaller button font */
+    }
+    button.clear {
+        width: 100%; /* Full width clear button */
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1.2em; /* Smaller heading size */
+    }
+
+    label {
+        font-size: 18px; /* Smaller label size */
+    }
+    
+    li {
+        font-size: 14px; /* Smaller list item font size */
+    }
+
+    button {
+        font-size: 12px; /* Smaller button font */
+    }
+}
+@media (max-width: 768px) {
+    #add {
+        margin-left: 0; /* Remove left margin on smaller screens */
+        margin-top: 10px; /* Add some space above the button */
+        width: 80px; /* Set a fixed width for the button on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #add {
+        width: 70px; /* Adjust button width further for extra small screens */
+        font-size: 14px; /* Smaller font size for better fit */
+    }
+}

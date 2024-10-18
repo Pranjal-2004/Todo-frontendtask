@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+        <div class="heading">
+            <h1>To-Do App</h1>
+        </div>
+        <div class="container">
+            <label>Add Item</label>
+            <input type="text" id="task" autocomplete="off" placeholder="Enter Task">
+            <button onclick="addTask()" id="add">Add</button>
+        </div>
+        <div class="container">
+            <label>List-Item</label>
+            <ul id="task-list"></ul>
+        </div>
+        <div class="container">
+            <label>In Progress</label>
+            <ul id="in-progress"></ul>
+        </div>
+        <div class="container">
+            <label>Completed</label>
+            <ul id="completed"></ul>
+            <button class="clear" onclick="clearCompleted()">Clear All</button>
+        </div>
+    </div>
+</body>
+<script src="index.js" ></script>
+</html>
